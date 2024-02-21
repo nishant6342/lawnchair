@@ -180,17 +180,15 @@ android {
         kotlinCompilerExtensionVersion = "1.5.9"
     }
 
-    final def keystorePropertiesFile = rootProject.file("keystore.properties")
     def releaseSigning = signingConfigs.debug
-    if (keystorePropertiesFile.exists()) {
-        final def keystoreProperties = new Properties()
-        keystoreProperties.load(new FileInputStream(keystorePropertiesFile))
-        releaseSigning = signingConfigs.create("release") {
-            keyAlias keystoreProperties['keyAlias']
-            keyPassword keystoreProperties['keyPassword']
-            storeFile rootProject.file(keystoreProperties['storeFile'])
-            storePassword keystoreProperties['storePassword']
-        }
+    Properties properties = new Properties()
+    properties.load(project.rootProject.file('local.properties').newDataInputStream())
+    def password = properties.getProperty('keystore.password')
+    releaseSigning = signingConfigs.create("release") {
+        storeFile = file("D:\\Github\\elixir_updater\\app\\platform.jks")
+        storePassword = password
+        keyPassword = password
+        keyAlias = "Elixir"
     }
 
     packagingOptions.resources.excludes += [
