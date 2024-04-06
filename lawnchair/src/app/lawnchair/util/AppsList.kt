@@ -46,7 +46,7 @@ fun appsState(
     val appsState = remember { mutableStateOf(emptyList<App>()) }
     DisposableEffect(Unit) {
         Utilities.postAsyncCallback(Handler(MODEL_EXECUTOR.looper)) {
-            val launcherApps = context.getSystemService(LauncherApps::class.java)
+            val launcherApps = context.getSystemService(LauncherApps::class.java)!!
 
             appsState.value = UserCache.INSTANCE.get(context).userProfiles.asSequence()
                 .flatMap { launcherApps.getActivityList(null, it) }

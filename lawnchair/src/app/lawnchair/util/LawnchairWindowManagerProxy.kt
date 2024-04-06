@@ -33,7 +33,7 @@ class LawnchairWindowManagerProxy(context: Context) : WindowManagerProxy(Utiliti
     override fun estimateInternalDisplayBounds(displayInfoContext: Context): ArrayMap<CachedDisplayInfo, List<WindowBounds>> {
         if (LawnchairApp.isAtleastT) {
             val result = ArrayMap<CachedDisplayInfo, List<WindowBounds>>()
-            val windowManager = displayInfoContext.getSystemService(WindowManager::class.java)
+            val windowManager = displayInfoContext.getSystemService(WindowManager::class.java)!!
             val possibleMaximumWindowMetrics =
                 windowManager.getPossibleMaximumWindowMetrics(DEFAULT_DISPLAY)
             for (windowMetrics in possibleMaximumWindowMetrics) {

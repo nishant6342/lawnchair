@@ -102,7 +102,7 @@ object TaskShortcutFactory {
                     }
                 }
                 try {
-                    WindowManagerGlobal.getWindowManagerService()
+                    WindowManagerGlobal.getWindowManagerService()!!
                         .overridePendingAppTransitionMultiThumbFuture(
                             future.future,
                             RecentsTransition.wrapStartedListener(

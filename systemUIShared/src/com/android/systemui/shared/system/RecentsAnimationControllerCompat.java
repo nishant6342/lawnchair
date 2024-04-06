@@ -99,7 +99,7 @@ public class RecentsAnimationControllerCompat {
      */
     public void finish(boolean toHome, boolean sendUserLeaveHint) {
         try {
-            mAnimationController.finish(toHome, sendUserLeaveHint);
+            mAnimationController.finish(toHome, sendUserLeaveHint, null);
         } catch (RemoteException e) {
             Log.e(TAG, "Failed to finish recents animation", e);
         }

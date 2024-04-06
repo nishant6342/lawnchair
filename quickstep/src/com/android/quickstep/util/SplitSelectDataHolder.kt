@@ -171,7 +171,8 @@ class SplitSelectDataHolder(
                 ?: return null
         try {
             val context: Context = context.createPackageContextAsUser(
-                    intent.getPackage(), 0 /* flags */, user)
+                intent.getPackage()!!, 0, /* flags */ user!!,
+            )
             return ShortcutInfo.Builder(context, shortcutId).build()
         } catch (e: PackageManager.NameNotFoundException) {
             Log.w(TAG, "Failed to create a ShortcutInfo for " + intent.getPackage())

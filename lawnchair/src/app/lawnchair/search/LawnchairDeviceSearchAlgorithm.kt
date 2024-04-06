@@ -45,8 +45,8 @@ class LawnchairDeviceSearchAlgorithm(context: Context) :
         activeQuery?.cancel()
         searchSession ?: return
         activeQuery = PendingQuery(query, callback)
-        val searchQuery = Query(query, System.currentTimeMillis(), null)
-        searchSession!!.query(searchQuery, Executors.MAIN_EXECUTOR, activeQuery)
+        val searchQuery = Query(query, System.currentTimeMillis())
+        searchSession!!.query(searchQuery, Executors.MAIN_EXECUTOR, activeQuery!!)
     }
 
     override fun cancel(interruptActiveRequests: Boolean) {
@@ -129,7 +129,7 @@ class LawnchairDeviceSearchAlgorithm(context: Context) :
                 val searchContext = SearchContext(1 or 2, 200, Bundle())
                 val searchManager = context.requireSystemService<SearchUiManager>()
                 val searchSession: SearchSession = searchManager.createSearchSession(searchContext)
-                val searchQuery = Query("dummy", System.currentTimeMillis(), null)
+                val searchQuery = Query("dummy", System.currentTimeMillis())
                 val prefs = PreferenceManager.getInstance(context)
                 val checkDone = AtomicBoolean(false)
                 searchSession.query(searchQuery, Executors.MAIN_EXECUTOR) { targets ->

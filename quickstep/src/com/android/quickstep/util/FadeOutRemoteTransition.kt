@@ -35,7 +35,7 @@ class FadeOutRemoteTransition : IRemoteTransition.Stub() {
         transitionInfo: TransitionInfo,
         transaction: Transaction,
         mergeTarget: IBinder,
-        finishCB: IRemoteTransitionFinishedCallback
+        finishCB: IRemoteTransitionFinishedCallback,
     ) {
 
         try {
@@ -45,11 +45,15 @@ class FadeOutRemoteTransition : IRemoteTransition.Stub() {
         }
     }
 
+
+    override fun onTransitionConsumed(transition: IBinder?, aborted: Boolean) {
+    }
+
     override fun startAnimation(
         transition: IBinder,
         info: TransitionInfo,
         startT: Transaction,
-        finishCB: IRemoteTransitionFinishedCallback
+        finishCB: IRemoteTransitionFinishedCallback,
     ) {
         val anim = ValueAnimator.ofFloat(1f, 0f)
 
@@ -77,8 +81,8 @@ class FadeOutRemoteTransition : IRemoteTransition.Stub() {
                     } catch (e: RemoteException) {
                         // Ignore
                     }
-                }
-            )
+                },
+            ),
         )
 
         Executors.MAIN_EXECUTOR.execute { anim.start() }

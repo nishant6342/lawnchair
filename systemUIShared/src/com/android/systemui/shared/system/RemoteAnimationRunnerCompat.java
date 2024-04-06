@@ -40,11 +40,6 @@ import android.window.TransitionInfo;
 
 import com.android.wm.shell.util.CounterRotator;
 
-import java.lang.reflect.InvocationTargetException;
-import java.lang.reflect.Method;
-
-import app.lawnchair.compat.LawnchairQuickstepCompat;
-
 public abstract class RemoteAnimationRunnerCompat extends IRemoteAnimationRunner.Stub {
     private static final String TAG = "RemoteAnimRunnerCompat";
 
@@ -254,6 +249,10 @@ public abstract class RemoteAnimationRunnerCompat extends IRemoteAnimationRunner
                 if (finishRunnable == null) return;
                 onAnimationCancelled(false /* isKeyguardOccluded */);
                 finishRunnable.run();
+            }
+
+            @Override
+            public void onTransitionConsumed(IBinder transition, boolean aborted) {
             }
         };
     }

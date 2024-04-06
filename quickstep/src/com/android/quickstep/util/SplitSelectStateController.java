@@ -576,6 +576,10 @@ public class SplitSelectStateController {
         }
 
         @Override
+        public void onTransitionConsumed(IBinder transition, boolean aborted) {
+        }
+        
+        @Override
         public void startAnimation(IBinder transition, TransitionInfo info,
                 SurfaceControl.Transaction t,
                 IRemoteTransitionFinishedCallback finishedCallback) {

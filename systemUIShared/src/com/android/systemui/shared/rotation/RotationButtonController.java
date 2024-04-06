@@ -289,7 +289,7 @@ public class RotationButtonController {
             return;
         }
         RotationPolicy.setRotationLockAtAngle(mContext, /* enabled= */ isLocked,
-                /* rotation= */ rotationSuggestion);
+                /* rotation= */ rotationSuggestion, /* caller */ "Lawnchair");
     }
 
     /**
