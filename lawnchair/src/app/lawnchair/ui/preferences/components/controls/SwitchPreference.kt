@@ -30,12 +30,15 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.unit.dp
 import app.lawnchair.preferences.PreferenceAdapter
 import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
+import app.lawnchair.ui.theme.LawnchairTheme
 import app.lawnchair.ui.theme.dividerColor
+import app.lawnchair.ui.util.PreviewLawnchair
 
 @Composable
 fun SwitchPreference(
     adapter: PreferenceAdapter<Boolean>,
     label: String,
+    modifier: Modifier = Modifier,
     description: String? = null,
     enabled: Boolean = true,
     onClick: (() -> Unit)? = null,
@@ -45,23 +48,28 @@ fun SwitchPreference(
         checked = checked,
         onCheckedChange = adapter::onChange,
         label = label,
+        modifier = modifier,
         description = description,
         onClick = onClick,
         enabled = enabled,
     )
 }
 
+/**
+ * A Preference that provides a two-state toggleable option.
+ */
 @Composable
 fun SwitchPreference(
     checked: Boolean,
     onCheckedChange: (Boolean) -> Unit,
     label: String,
+    modifier: Modifier = Modifier,
     description: String? = null,
     enabled: Boolean = true,
     onClick: (() -> Unit)? = null,
 ) {
     PreferenceTemplate(
-        modifier = Modifier.clickable(enabled = enabled) {
+        modifier = modifier.clickable(enabled = enabled) {
             if (onClick != null) {
                 onClick()
             } else {
@@ -96,4 +104,17 @@ fun SwitchPreference(
         enabled = enabled,
         applyPaddings = false,
     )
+}
+
+@PreviewLawnchair
+@Composable
+private fun SwitchPreferencePreview() {
+    LawnchairTheme {
+        SwitchPreference(
+            checked = true,
+            onCheckedChange = {},
+            label = "Example switch",
+            description = "Sample description text",
+        )
+    }
 }

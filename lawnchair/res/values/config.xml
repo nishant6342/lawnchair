@@ -89,6 +89,8 @@
     <bool name="config_default_dock_search_bar_force_website">false</bool>
     <bool name="config_default_rounded_widgets">true</bool>
     <bool name="config_default_allow_widget_overlap">false</bool>
+    <bool name="config_default_force_widget_resize">false</bool>
+    <bool name="config_default_widget_unlimited_size">false</bool>
     <bool name="config_default_show_status_bar">true</bool>
     <bool name="config_default_remember_position">false</bool>
     <bool name="config_default_show_scrollbar">true</bool>
@@ -115,6 +117,8 @@
     <bool name="config_default_smartspace_show_date">true</bool>
     <bool name="config_default_smartspace_show_time">false</bool>
     <bool name="config_default_perform_wide_search">true</bool>
+    <bool name="config_default_live_information_enabled">true</bool>
+    <bool name="config_default_live_information_show_announcements">true</bool>
     <bool name="config_default_enable_dot_pagination">true</bool>
     <bool name="config_default_enable_material_u_popup">true</bool>
 

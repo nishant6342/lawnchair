@@ -56,7 +56,7 @@
     <string name="transparent_background_icons_description">Usar fundo transparente nos ícones temáticos</string>
     <!-- GeneralPreferences -->
     <string name="home_screen_rotation_label">Rotação da Tela Inicial</string>
-    <string name="home_screen_rotaton_description">Quando o dispositivo for rotacionado.</string>
+    <string name="home_screen_rotation_description">Quando o dispositivo for rotacionado.</string>
     <string name="font_label">Fonte (Experimental)</string>
     <!-- <string name="icons" /> -->
     <string name="icon_style">Estilo do Ícone</string>
@@ -183,14 +183,14 @@
     <string name="home_screen_unlock">Desbloquear Tela Inicial</string>
     <!-- used in popup menu-->
     <string name="home_screen_locked">A Tela Inicial está bloqueada.</string>
-    <string name="show_dot_pagination_label">Show dot pagination</string>
-    <string name="show_dot_pagination_description">Enable showing dot pagination in workspace.</string>
-    <string name="show_material_u_popup_label">Show Material U Popup</string>
-    <string name="show_material_u_popup_description">Enable bouncy and slightly consolidated popup.</string>
+    <string name="show_dot_pagination_label">Exibir paginação de pontos</string>
+    <string name="show_dot_pagination_description">Habilitar a exibição de paginação de pontos no desktop.</string>
+    <string name="show_material_u_popup_label">Exibir Pop-up Material U</string>
+    <string name="show_material_u_popup_description">Habilitar saltos e pop-up ligeiramente consolidados.</string>
     <string name="popup_menu">Menu Flutuante</string>
     <string name="home_screen_lock_toggle_from_home_popup">Mostrar Botão de Bloqueio</string>
     <string name="show_system_settings_entry">Mostrar Entrada para Configurações do Sistema</string>
-    <string name="home_screen_edit_toggle_from_home_popup">Show Edit Button</string>
+    <string name="home_screen_edit_toggle_from_home_popup">Mostrar Botão Editar</string>
     <string name="status_bar_label">Barra de Status</string>
     <string name="show_status_bar">Mostrar barra de status</string>
     <string name="dark_status_bar_label">Barra de Status Escura</string>
@@ -247,7 +247,7 @@
     <string name="smartspace_mode_google_search">Pesquisa do Google</string>
     <!-- DockPreferences -->
     <!-- <string name="dock_label" /> -->
-    <string name="show_hotseat_title">Show Dock</string>
+    <string name="show_hotseat_title">Exibir Dock</string>
     <string name="hotseat_mode_label">Widget da Barra de Pesquisa</string>
     <string name="hotseat_mode_disabled">Desativado</string>
     <string name="hotseat_mode_lawnchair">Lawnchair</string>
@@ -262,7 +262,7 @@
     <!-- SearchProviderPreferences -->
     <!-- search_provider -->
     <string name="search_provider_app_search">Pesquisa de aplicativos</string>
-    <string name="search_provider_sponsored_description">%1$s &amp; Lawnchair have a revenue share agreement.\n\nSearching with %1$s helps support Lawnchair.</string>
+    <string name="search_provider_sponsored_description">%1$s &amp; Lawnchair tem um acordo de participação na receita.\n\nPesquisar com %1$s ajuda a apoiar o Lawnchair.</string>
     <string name="app_label">Aplicativo</string>
     <string name="website_label">Site da Internet</string>
     <string name="qsb_search_provider_app_required">Aplicativo necessário.</string>
@@ -276,33 +276,33 @@
     <string name="hide_hidden_apps_search">Ocultar nos Resultados da Pesquisa</string>
     <string name="pref_all_apps_bulk_icon_loading_title">Carregar Apps em massa</string>
     <string name="pref_all_apps_bulk_icon_loading_description">Carregar e exibir ícones em massa em vez de carregar e exibir ícones individualmente</string>
-    <string name="pref_all_apps_remember_position_title">Remember Position</string>
-    <string name="pref_all_apps_remember_position_description">Remember the position when you left off instead of the top</string>
-    <string name="pref_all_apps_show_scrollbar_title">Show Scrollbar</string>
+    <string name="pref_all_apps_remember_position_title">Lembrar da posição</string>
+    <string name="pref_all_apps_remember_position_description">Lembrar a posição de onde você parou, em vez de retornar ao topo</string>
+    <string name="pref_all_apps_show_scrollbar_title">Mostrar a barra de rolagem</string>
     <string name="pref_category_search">Pesquisar</string>
     <string name="show_app_search_bar">Exibir Barra de Pesquisa</string>
     <string name="pref_search_auto_show_keyboard">Mostrar Teclado Automaticamente</string>
     <string name="fuzzy_search_title">Pesquisa Aproximada</string>
     <string name="fuzzy_search_desc">Correspondência aproximada para pesquisas de apps.</string>
-    <string name="max_search_result_count_title">Quantidade Máxima de Resultados na Pesquisa</string>
+    <string name="max_apps_result_count_title">Quantidade Máxima de Resultados na Pesquisa</string>
     <string name="max_people_result_count_title">Contagem máxima de resultados de pessoas</string>
     <string name="max_file_result_count_title">Contagem máxima de resultados de arquivos</string>
     <string name="max_suggestion_result_count_title">Contagem máxima de resultados de sugestões</string>
     <string name="max_settings_entry_result_count_title">Contagem máxima de resultados de entradas de configurações</string>
     <string name="max_recent_result_count_title">Contagem máxima de resultados do histórico</string>
-    <string name="max_web_suggestion_delay">Max Web Suggestion Delay</string>
+    <string name="max_web_suggestion_delay">Atraso máximo de sugestões da Web</string>
     <string name="clear_history">Limpar</string>
     <!-- <string name="grid" /> -->
     <string name="app_drawer_columns">Colunas na Gaveta de Aplicativos</string>
     <string name="row_height_label">Altura da Linha</string>
     <string name="app_drawer_indent_label">Preenchimento Horizontal</string>
     <string name="perform_wide_search_title">Pesquisa de dispositivos</string>
-    <string name="perform_wide_search_file">Arquivos</string>
+    <string name="search_pref_result_files_title">Arquivos</string>
     <string name="pref_suggestion_label">Sugestões</string>
-    <string name="pref_suggestion_title">Sugestões da web (via <xliff:g id="startpage">Página inicial</xliff:g>)</string>
+    <string name="search_pref_result_web_title">Sugestões da web (via <xliff:g id="startpage">Página inicial</xliff:g>)</string>
     <string name="pref_advance_search_category">Pesquisa Avançada</string>
     <string name="perform_wide_search_description">Pesquise seus contatos, arquivos e configurações na busca da gaveta de aplicativos.</string>
-    <string name="pref_recent_suggestion_title">Histórico</string>
+    <string name="search_pref_result_history_title">Histórico</string>
     <!--
     <string name="icons" />
       <string name="icon_size" />
@@ -342,14 +342,14 @@
     <!-- QuickstepPreferences -->
     <!-- <string name="quickstep_label" /> -->
     <!-- <string name="general_label" /> -->
-    <string name="quickswitch_ignored_warning">These settings will be ignored as Lawnchair is not set as the Recents provider.</string>
+    <string name="quickswitch_ignored_warning">Estas configurações serão ignoradas, já que o Lawnchair não está definido como o provedor de recentes.</string>
     <string name="translucent_background">Fundo Desfocado</string>
     <string name="recents_actions_label">Ações Rápidas</string>
     <!-- <string name="screenshot" /> (unknown source) -->
     <string name="action_share">Compartilhar</string>
     <string name="action_lens">Lens</string>
     <string name="recents_clear_all">Limpar tudo</string>
-    <string name="task_menu_force_stop">Force close</string>
+    <string name="task_menu_force_stop">Forçar fechamento</string>
     <string name="window_corner_radius_label">Raio dos Cantos da Tela</string>
     <string name="override_window_corner_radius_label">Raio Personalizado dos Cantos da Tela</string>
     <string name="window_corner_radius_description">Ao deslizar para cima para abrir as mudanças recentes, o aplicativo atual segue o seu dedo, diminuindo em um cartão. Utilize este controle deslizante para ajustar o raio de curvatura do cartão quando este estiver quase em tela cheia, de modo a que corresponda aos cantos da sua tela.</string>
@@ -415,7 +415,7 @@
     <string name="label_search">Pesquisar</string>
     <string name="label_lens">Google Lens</string>
     <string name="label_voice_search">Pesquisa por Voz</string>
-    <string name="search_pref_result_settings_entry_title">Entrada de configurações</string>
+    <string name="search_pref_result_settings_title">Entrada de configurações</string>
     <string name="all_apps_search_market_message">Pesquisar por mais Aplicativos</string>
     <string name="all_apps_search_startpage_message">Pesquisar na <xliff:g id="startpage">Página Inicial</xliff:g></string>
     <string name="error_no_market_or_browser_installed">Nenhuma loja de aplicativos ou navegador instalado.</string>
@@ -425,8 +425,8 @@
     <string name="all_apps_search_result_settings_entry_from_device">Das suas configurações</string>
     <string name="warn_contact_permission_content">Requer permissão de contato</string>
     <string name="warn_files_permission_content">Requer permissão de armazenamento</string>
-    <string name="all_apps_search_result_files_description">Mídia, documentos, pastas e mais.</string>
-    <string name="all_apps_search_result_contacts_description">Contatos e mais</string>
+    <string name="search_pref_result_files_description">Mídia, documentos, pastas e mais.</string>
+    <string name="search_pref_result_contacts_description">Contatos e mais</string>
     <string name="quickstep_incompatible">Integração de Sistema Incompatível</string>
     <string name="quickstep_incompatible_description">Seu dispositivo está configurado para ter gestos do sistema (conhecido como Quickstep) fornecidos por %1$s, mas esta versão do %1$s não é compatível com sua versão do Android. Para continuar usando o seu dispositivo, desinstale as atualizações do %1$s ou desative %1$s como provedor de gesto do sistema.</string>
     <string name="delete">Apagar</string>
@@ -447,8 +447,8 @@
     <string name="x_by_y">%1$d × %2$d</string>
     <string name="x_and_y">%s &amp; %s</string>
     <string name="system_settings">Definições de Sistema</string>
-    <string name="action_unlock">Unlock</string>
-    <string name="action_lock">Lock</string>
-    <string name="recents_lock_unlock">Lock/Unlock</string>
-    <string name="recents_lock_unlock_description">Prevent selected app from clearing when using \"Clear All\"</string>
+    <string name="action_unlock">Desbloquear</string>
+    <string name="action_lock">Bloquear</string>
+    <string name="recents_lock_unlock">Bloquear/Desbloquear</string>
+    <string name="recents_lock_unlock_description">Impedir que o aplicativo selecionado limpe ao usar \"Limpar Tudo\"</string>
 </resources>

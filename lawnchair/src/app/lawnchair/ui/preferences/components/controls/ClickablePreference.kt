@@ -26,13 +26,14 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.res.stringResource
 import androidx.compose.ui.unit.dp
-import app.lawnchair.ui.AlertBottomSheetContent
+import app.lawnchair.ui.ModalBottomSheetContent
 import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
 import app.lawnchair.ui.util.bottomSheetHandler
 
 @Composable
 fun ClickablePreference(
     label: String,
+    modifier: Modifier = Modifier,
     subtitle: String? = null,
     confirmationText: String? = null,
     onClick: () -> Unit,
@@ -40,7 +41,7 @@ fun ClickablePreference(
     val bottomSheetHandler = bottomSheetHandler
     PreferenceTemplate(
         title = { Text(text = label) },
-        modifier = Modifier
+        modifier = modifier
             .clickable {
                 if (confirmationText != null) {
                     bottomSheetHandler.show {
@@ -63,10 +64,11 @@ fun ClickablePreference(
 fun PreferenceClickConfirmation(
     title: String,
     text: String,
-    onDismissRequest: () -> Unit,
     onConfirm: () -> Unit,
+    onDismissRequest: () -> Unit,
+    modifier: Modifier = Modifier,
 ) {
-    AlertBottomSheetContent(
+    ModalBottomSheetContent(
         title = { Text(text = title) },
         text = { Text(text = text) },
         buttons = {
@@ -85,5 +87,6 @@ fun PreferenceClickConfirmation(
                 Text(text = stringResource(id = android.R.string.ok))
             }
         },
+        modifier = modifier,
     )
 }

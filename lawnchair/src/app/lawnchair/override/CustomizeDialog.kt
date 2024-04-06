@@ -11,10 +11,10 @@ import androidx.compose.foundation.layout.Column
 import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.size
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material.OutlinedTextField
-import androidx.compose.material.Text
-import androidx.compose.material.TextFieldDefaults
+import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.OutlinedTextField
+import androidx.compose.material3.OutlinedTextFieldDefaults
+import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.DisposableEffect
 import androidx.compose.runtime.getValue
@@ -52,10 +52,11 @@ fun CustomizeDialog(
     onTitleChange: (String) -> Unit,
     defaultTitle: String,
     launchSelectIcon: (() -> Unit)?,
+    modifier: Modifier = Modifier,
     content: (@Composable () -> Unit)? = null,
 ) {
     Column(
-        modifier = Modifier
+        modifier = modifier
             .navigationBarsOrDisplayCutoutPadding()
             .fillMaxWidth(),
     ) {
@@ -91,9 +92,9 @@ fun CustomizeDialog(
                 }
             },
             singleLine = true,
-            colors = TextFieldDefaults.outlinedTextFieldColors(
-                unfocusedBorderColor = MaterialTheme.colors.onSurface.copy(alpha = 0.12F),
-                textColor = MaterialTheme.colors.onSurface,
+            colors = OutlinedTextFieldDefaults.colors(
+                unfocusedContainerColor = MaterialTheme.colorScheme.surface,
+                focusedTextColor = MaterialTheme.colorScheme.onSurface,
             ),
             shape = MaterialTheme.shapes.large,
             label = { Text(text = stringResource(id = R.string.label)) },
@@ -108,6 +109,7 @@ fun CustomizeAppDialog(
     icon: Drawable,
     defaultTitle: String,
     componentKey: ComponentKey,
+    modifier: Modifier = Modifier,
     onClose: () -> Unit,
 ) {
     val prefs = preferenceManager()
@@ -146,6 +148,7 @@ fun CustomizeAppDialog(
         onTitleChange = { title = it },
         defaultTitle = defaultTitle,
         launchSelectIcon = openIconPicker,
+        modifier = modifier,
     ) {
         PreferenceGroup(
             description = componentKey.componentName.flattenToString(),

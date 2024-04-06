@@ -56,7 +56,7 @@
     <string name="transparent_background_icons_description">Користи прозирну позадину на тематским иконама</string>
     <!-- GeneralPreferences -->
     <string name="home_screen_rotation_label">Ротација почетног екрана</string>
-    <string name="home_screen_rotaton_description">Када се уређај ротира.</string>
+    <string name="home_screen_rotation_description">Када се уређај ротира.</string>
     <string name="font_label">Фонт (експериментално)</string>
     <!-- <string name="icons" /> -->
     <string name="icon_style">Стил икона</string>
@@ -284,7 +284,7 @@
     <string name="pref_search_auto_show_keyboard">Аутоматски приказуј тастатуру</string>
     <string name="fuzzy_search_title">Приближна претрага</string>
     <string name="fuzzy_search_desc">Приближни резултати претраге на основу упита.</string>
-    <string name="max_search_result_count_title">Максималан број резултата претраге</string>
+    <string name="max_apps_result_count_title">Максималан број резултата претраге</string>
     <string name="max_people_result_count_title">Максималан број резултата контаката</string>
     <string name="max_file_result_count_title">Максималан број резултата фајлова</string>
     <string name="max_suggestion_result_count_title">Максималан број резултата предлога</string>
@@ -297,12 +297,12 @@
     <string name="row_height_label">Висина реда</string>
     <string name="app_drawer_indent_label">Хоризонтални размак</string>
     <string name="perform_wide_search_title">Претрага уређаја</string>
-    <string name="perform_wide_search_file">Фајлови</string>
+    <string name="search_pref_result_files_title">Фајлови</string>
     <string name="pref_suggestion_label">Predlozi</string>
-    <string name="pref_suggestion_title">Веб-предлози (помоћу услуге <xliff:g id="startpage">Startpage</xliff:g>)</string>
+    <string name="search_pref_result_web_title">Веб-предлози (помоћу услуге <xliff:g id="startpage">Startpage</xliff:g>)</string>
     <string name="pref_advance_search_category">Напредна претрага</string>
     <string name="perform_wide_search_description">Претражујте контакте, фајлове и подешавања на листи апликација.</string>
-    <string name="pref_recent_suggestion_title">Историја</string>
+    <string name="search_pref_result_history_title">Историја</string>
     <!--
     <string name="icons" />
       <string name="icon_size" />
@@ -416,7 +416,7 @@
     <string name="label_search">Претражите</string>
     <string name="label_lens">Google објектив</string>
     <string name="label_voice_search">Гласовна претрага</string>
-    <string name="search_pref_result_settings_entry_title">Подешавање</string>
+    <string name="search_pref_result_settings_title">Подешавање</string>
     <string name="all_apps_search_market_message">Претражите више апликација</string>
     <string name="all_apps_search_startpage_message">Претражуј помоћу услуге <xliff:g id="startpage">Startpage</xliff:g></string>
     <string name="error_no_market_or_browser_installed">Није инсталирана продавница апликација или прегледач.</string>
@@ -426,8 +426,8 @@
     <string name="all_apps_search_result_settings_entry_from_device">Подешавања</string>
     <string name="warn_contact_permission_content">Потребна је дозвола за контакте</string>
     <string name="warn_files_permission_content">Потребна је дозвола за меморијски простор</string>
-    <string name="all_apps_search_result_files_description">Медији, документи, фолдери и друго.</string>
-    <string name="all_apps_search_result_contacts_description">Контакти и друго</string>
+    <string name="search_pref_result_files_description">Медији, документи, фолдери и друго.</string>
+    <string name="search_pref_result_contacts_description">Контакти и друго</string>
     <string name="quickstep_incompatible">Некомпатибилна интеграција са системом</string>
     <string name="quickstep_incompatible_description">Уређај је подешен да користи системске покрете (познате као Quickstep), које пружа %1$s, али ова верзија апликације %1$s није компатибилна са вашом верзијом Android-а. Да бисте наставили да користите уређај, деинсталирајте ажурирања апликације %1$s или онемогућите %1$s као добављача системских покрета.</string>
     <string name="delete">Избриши</string>

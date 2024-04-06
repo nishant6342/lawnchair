@@ -56,7 +56,7 @@
     <string name="transparent_background_icons_description">Använd transparent bakgrund på tematiserade ikoner</string>
     <!-- GeneralPreferences -->
     <string name="home_screen_rotation_label">Rotation av startskärmen</string>
-    <string name="home_screen_rotaton_description">När enheten roteras.</string>
+    <string name="home_screen_rotation_description">När enheten roteras.</string>
     <string name="font_label">Typsnitt (experimentellt)</string>
     <!-- <string name="icons" /> -->
     <string name="icon_style">Ikonstil</string>
@@ -284,7 +284,7 @@
     <string name="pref_search_auto_show_keyboard">Visa tangentbord automatiskt</string>
     <string name="fuzzy_search_title">Oskarp sökning</string>
     <string name="fuzzy_search_desc">Ungefärlig matchning för appsökningar.</string>
-    <string name="max_search_result_count_title">Max antal sökresultat</string>
+    <string name="max_apps_result_count_title">Max antal sökresultat</string>
     <string name="max_people_result_count_title">Max antal personresultat</string>
     <string name="max_file_result_count_title">Max antal filresultat</string>
     <string name="max_suggestion_result_count_title">Max antal förslagsresultat</string>
@@ -297,12 +297,12 @@
     <string name="row_height_label">Radhöjd</string>
     <string name="app_drawer_indent_label">Vågrätt avstånd</string>
     <string name="perform_wide_search_title">Enhetssökning</string>
-    <string name="perform_wide_search_file">Filer</string>
+    <string name="search_pref_result_files_title">Filer</string>
     <string name="pref_suggestion_label">Förslag</string>
-    <string name="pref_suggestion_title">Webbförslag (via <xliff:g id="startpage">Startpage</xliff:g>)</string>
+    <string name="search_pref_result_web_title">Webbförslag (via <xliff:g id="startpage">Startpage</xliff:g>)</string>
     <string name="pref_advance_search_category">Avancerad sökning</string>
     <string name="perform_wide_search_description">Sök bland dina kontakter, filer och inställningar vid applådesökning.</string>
-    <string name="pref_recent_suggestion_title">Historik</string>
+    <string name="search_pref_result_history_title">Historik</string>
     <!--
     <string name="icons" />
       <string name="icon_size" />
@@ -415,7 +415,7 @@
     <string name="label_search">Sök</string>
     <string name="label_lens">Google Lens</string>
     <string name="label_voice_search">Röstsökning</string>
-    <string name="search_pref_result_settings_entry_title">Inställningar</string>
+    <string name="search_pref_result_settings_title">Inställningar</string>
     <string name="all_apps_search_market_message">Sök efter fler appar</string>
     <string name="all_apps_search_startpage_message">Sök på <xliff:g id="startpage">Startpage</xliff:g></string>
     <string name="error_no_market_or_browser_installed">Ingen appbutik eller webbläsare installerad.</string>
@@ -425,8 +425,8 @@
     <string name="all_apps_search_result_settings_entry_from_device">Från dina inställningar</string>
     <string name="warn_contact_permission_content">Kräver kontaktbehörighet</string>
     <string name="warn_files_permission_content">Kräver lagringsbehörighet</string>
-    <string name="all_apps_search_result_files_description">Media, dokument, mappar med mera.</string>
-    <string name="all_apps_search_result_contacts_description">Kontakter med mera</string>
+    <string name="search_pref_result_files_description">Media, dokument, mappar med mera.</string>
+    <string name="search_pref_result_contacts_description">Kontakter med mera</string>
     <string name="quickstep_incompatible">Inkompatibel systemintegration</string>
     <string name="quickstep_incompatible_description">Din enhet är konfigurerad för att ha systemgester (kända som Quickstep) tillhandahållna av %1$s, men denna version av %1$s är inte kompatibel med din Android-version. För att fortsätta att använda din enhet, vänligen avinstallera uppdateringar till %1$s eller inaktivera %1$s som systemgestsleverantör.</string>
     <string name="delete">Radera</string>

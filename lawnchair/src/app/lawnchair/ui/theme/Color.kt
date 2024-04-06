@@ -7,11 +7,9 @@ import android.view.ContextThemeWrapper
 import androidx.annotation.ColorInt
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.runtime.Composable
-import androidx.compose.ui.unit.dp
 import androidx.core.graphics.ColorUtils
 import app.lawnchair.theme.UiColorMode
 import app.lawnchair.theme.color.ColorTokens
-import app.lawnchair.theme.surfaceColorAtElevation
 import com.android.launcher3.R
 import com.android.launcher3.Utilities
 import com.android.launcher3.util.Themes
@@ -39,8 +37,7 @@ fun lightenColor(@ColorInt color: Int): Int {
 fun Context.getSystemAccent(darkTheme: Boolean): Int {
     val res = resources
     return if (Utilities.ATLEAST_S) {
-        val colorName = if (darkTheme) "system_accent1_100" else "system_accent1_600"
-        val colorId = res.getIdentifier(colorName, "color", "android")
+        val colorId = if (darkTheme) R.color.system_accent1_100 else R.color.system_accent1_600
         res.getColor(colorId)
     } else {
         var propertyValue = Utilities.getSystemProperty("persist.sys.theme.accentcolor", "")
@@ -63,4 +60,4 @@ fun Context.getSystemAccent(darkTheme: Boolean): Int {
 }
 
 @Composable
-fun dividerColor() = MaterialTheme.colorScheme.surfaceColorAtElevation(32.dp)
+fun dividerColor() = MaterialTheme.colorScheme.surfaceVariant

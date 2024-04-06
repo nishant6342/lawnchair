@@ -30,8 +30,8 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.asImageBitmap
 import androidx.compose.ui.unit.dp
 import app.lawnchair.ui.placeholder.PlaceholderHighlight
-import app.lawnchair.ui.placeholder.material.fade
-import app.lawnchair.ui.placeholder.material.placeholder
+import app.lawnchair.ui.placeholder.fade
+import app.lawnchair.ui.placeholder.placeholder
 import app.lawnchair.ui.preferences.components.layout.PreferenceTemplate
 import app.lawnchair.util.App
 
@@ -54,10 +54,11 @@ fun AppItem(
     label: String,
     icon: Bitmap,
     onClick: () -> Unit,
+    modifier: Modifier = Modifier,
     widget: (@Composable () -> Unit)? = null,
 ) {
     AppItemLayout(
-        modifier = Modifier
+        modifier = modifier
             .clickable(onClick = onClick),
         widget = widget,
         icon = {
@@ -73,6 +74,7 @@ fun AppItem(
 
 @Composable
 fun AppItemPlaceholder(
+    modifier: Modifier = Modifier,
     widget: (@Composable () -> Unit)? = null,
 ) {
     AppItemLayout(
@@ -98,6 +100,7 @@ fun AppItemPlaceholder(
             )
         },
         widget = widget,
+        modifier = modifier,
     )
 }
 

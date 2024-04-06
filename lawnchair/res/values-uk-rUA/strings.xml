@@ -56,7 +56,7 @@
     <string name="transparent_background_icons_description">Використовувати прозорий фон на тематичних іконках</string>
     <!-- GeneralPreferences -->
     <string name="home_screen_rotation_label">Обертання Головного Екрану</string>
-    <string name="home_screen_rotaton_description">При обертанні пристрою.</string>
+    <string name="home_screen_rotation_description">При обертанні пристрою.</string>
     <string name="font_label">Шрифт (експериментально)</string>
     <!-- <string name="icons" /> -->
     <string name="icon_style">Стиль значка</string>
@@ -284,7 +284,7 @@
     <string name="pref_search_auto_show_keyboard">Автоматично показувати клавіатуру</string>
     <string name="fuzzy_search_title">Приблизний Пошук</string>
     <string name="fuzzy_search_desc">Приблизна відповідність для пошуку додатків.</string>
-    <string name="max_search_result_count_title">Максимальна кількість результатів пошуку</string>
+    <string name="max_apps_result_count_title">Максимальна кількість результатів пошуку</string>
     <string name="max_people_result_count_title">Кількість результатів пошуку серед людей</string>
     <string name="max_file_result_count_title">Максимальна кількість результатів для файлів</string>
     <string name="max_suggestion_result_count_title">Кількість результатів макс. пропозиції</string>
@@ -297,12 +297,12 @@
     <string name="row_height_label">Висота рядка</string>
     <string name="app_drawer_indent_label">Горизонтальний відступ</string>
     <string name="perform_wide_search_title">Пошук пристрою</string>
-    <string name="perform_wide_search_file">Файли</string>
+    <string name="search_pref_result_files_title">Файли</string>
     <string name="pref_suggestion_label">Пропозиції</string>
-    <string name="pref_suggestion_title">Веб-пропозиції (через <xliff:g id="startpage">Початкова сторінка</xliff:g>)</string>
+    <string name="search_pref_result_web_title">Веб-пропозиції (через <xliff:g id="startpage">Початкова сторінка</xliff:g>)</string>
     <string name="pref_advance_search_category">Розширений пошук</string>
     <string name="perform_wide_search_description">Пошук ваших контактів, файлів, у меню програм.</string>
-    <string name="pref_recent_suggestion_title">Журнал</string>
+    <string name="search_pref_result_history_title">Журнал</string>
     <!--
     <string name="icons" />
       <string name="icon_size" />
@@ -417,7 +417,7 @@
     <string name="label_search">Пошук</string>
     <string name="label_lens">Google Lens</string>
     <string name="label_voice_search">Голосовий пошук</string>
-    <string name="search_pref_result_settings_entry_title">Налаштування запису</string>
+    <string name="search_pref_result_settings_title">Налаштування запису</string>
     <string name="all_apps_search_market_message">Пошук інших додатків</string>
     <string name="all_apps_search_startpage_message">Шукати в <xliff:g id="Головна сторінка">Головна сторінка</xliff:g></string>
     <string name="error_no_market_or_browser_installed">Не встановлено жодного магазину додатків або браузера.</string>
@@ -427,8 +427,8 @@
     <string name="all_apps_search_result_settings_entry_from_device">З ваших параметрів</string>
     <string name="warn_contact_permission_content">Потребує дозволу для контактів</string>
     <string name="warn_files_permission_content">Необхідний дозвіл на зберігання</string>
-    <string name="all_apps_search_result_files_description">Медіa, документи, папки та інше.</string>
-    <string name="all_apps_search_result_contacts_description">Контакти та інше</string>
+    <string name="search_pref_result_files_description">Медіa, документи, папки та інше.</string>
+    <string name="search_pref_result_contacts_description">Контакти та інше</string>
     <string name="quickstep_incompatible">Несумісна системна інтеграція</string>
     <string name="quickstep_incompatible_description">Ваш пристрій налаштовано на використання системних жестів (відомих як Quickstep), які надає %1$s, але ця версія %1$s несумісна з вашою версією Android. Щоб продовжити використовувати свій пристрій, видаліть оновлення %1$s або вимкніть %1$s як постачальника системних жестів.</string>
     <string name="delete">Видалити</string>

@@ -56,7 +56,7 @@
     <string name="transparent_background_icons_description">Gunakan latar belakang transparan pada ikon bertema</string>
     <!-- GeneralPreferences -->
     <string name="home_screen_rotation_label">Rotasi Layar Beranda</string>
-    <string name="home_screen_rotaton_description">Ketika perangkat diputar.</string>
+    <string name="home_screen_rotation_description">Ketika perangkat diputar.</string>
     <string name="font_label">Font (Eksperimental)</string>
     <!-- <string name="icons" /> -->
     <string name="icon_style">Gaya Ikon</string>
@@ -284,7 +284,7 @@
     <string name="pref_search_auto_show_keyboard">Tampilkan keyboard secara otomatis</string>
     <string name="fuzzy_search_title">Pencarian Samar</string>
     <string name="fuzzy_search_desc">Memperkirakan kecocokan untuk pencarian aplikasi.</string>
-    <string name="max_search_result_count_title">Jumlah Hasil Pencarian Maksimal</string>
+    <string name="max_apps_result_count_title">Jumlah Hasil Pencarian Maksimal</string>
     <string name="max_people_result_count_title">Jumlah Hasil Orang Maksimal</string>
     <string name="max_file_result_count_title">Jumlah Hasil File Maksimal</string>
     <string name="max_suggestion_result_count_title">Jumlah Hasil Saran Maksimal</string>
@@ -297,12 +297,12 @@
     <string name="row_height_label">Tinggi Baris</string>
     <string name="app_drawer_indent_label">Horizontal Padding</string>
     <string name="perform_wide_search_title">Penelusuran Perangkat</string>
-    <string name="perform_wide_search_file">File</string>
+    <string name="search_pref_result_files_title">File</string>
     <string name="pref_suggestion_label">Saran</string>
-    <string name="pref_suggestion_title">Saran web (via <xliff:g id="startpage">Startpage</xliff:g>)</string>
+    <string name="search_pref_result_web_title">Saran web (via <xliff:g id="startpage">Startpage</xliff:g>)</string>
     <string name="pref_advance_search_category">Penelusuran Lanjutan</string>
     <string name="perform_wide_search_description">Telusuri kontak, file, dan pengaturan Anda di pencarian laci aplikasi.</string>
-    <string name="pref_recent_suggestion_title">Histori</string>
+    <string name="search_pref_result_history_title">Histori</string>
     <!--
     <string name="icons" />
       <string name="icon_size" />
@@ -414,7 +414,7 @@
     <string name="label_search">Pencarian</string>
     <string name="label_lens">Google Lens</string>
     <string name="label_voice_search">Penelusuran Suara</string>
-    <string name="search_pref_result_settings_entry_title">Entri Pengaturan</string>
+    <string name="search_pref_result_settings_title">Entri Pengaturan</string>
     <string name="all_apps_search_market_message">Cari Lebih Banyak Aplikasi</string>
     <string name="all_apps_search_startpage_message">Cari di <xliff:g id="startpage">Startpage</xliff:g></string>
     <string name="error_no_market_or_browser_installed">Tidak ada toko aplikasi atau browser yang terinstal.</string>
@@ -424,8 +424,8 @@
     <string name="all_apps_search_result_settings_entry_from_device">Dari pengaturan Anda</string>
     <string name="warn_contact_permission_content">Memerlukan izin kontak</string>
     <string name="warn_files_permission_content">Memerlukan izin penyimpanan</string>
-    <string name="all_apps_search_result_files_description">Media, dokumen, folder, dan lainnya.</string>
-    <string name="all_apps_search_result_contacts_description">Kontak dan lainnya</string>
+    <string name="search_pref_result_files_description">Media, dokumen, folder, dan lainnya.</string>
+    <string name="search_pref_result_contacts_description">Kontak dan lainnya</string>
     <string name="quickstep_incompatible">Integrasi Sistem yang Tidak Kompatibel</string>
     <string name="quickstep_incompatible_description">Perangkat Anda dikonfigurasikan untuk menggunakan sistem gestur (dikenal sebagai Quickstep) yang disediakan oleh %1$s, tetapi versi %1$s ini tidak kompatibel dengan versi Android Anda. Untuk terus menggunakan perangkat Anda, mohon uninstal pembaruan %1$s atau menonaktifkan %1$s sebagai penyedia sistem gestur.</string>
     <string name="delete">Hapus</string>

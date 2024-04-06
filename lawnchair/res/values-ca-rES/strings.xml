@@ -56,7 +56,7 @@
     <string name="transparent_background_icons_description">Utilitza un fons transparent a les icones temàtiques</string>
     <!-- GeneralPreferences -->
     <string name="home_screen_rotation_label">Rotació de la Pantalla d\'inici</string>
-    <string name="home_screen_rotaton_description">Quan es gira el dispositiu.</string>
+    <string name="home_screen_rotation_description">Quan es gira el dispositiu.</string>
     <string name="font_label">Font (Experimental)</string>
     <!-- <string name="icons" /> -->
     <string name="icon_style">Estil de les icones</string>
@@ -284,7 +284,7 @@
     <string name="pref_search_auto_show_keyboard">Mostrar teclat automàticament</string>
     <string name="fuzzy_search_title">Cerca aproximada</string>
     <string name="fuzzy_search_desc">Aparellament aproximat per a cerques d\'aplicacions.</string>
-    <string name="max_search_result_count_title">Màxim nombre de resultats a la cerca</string>
+    <string name="max_apps_result_count_title">Màxim nombre de resultats a la cerca</string>
     <string name="max_people_result_count_title">Màxim Nombre De Persones</string>
     <string name="max_file_result_count_title">Màxim Nombre De Persones</string>
     <string name="max_suggestion_result_count_title">Màxim Nombre De Persones</string>
@@ -297,12 +297,12 @@
     <string name="row_height_label">Alçada de fila</string>
     <string name="app_drawer_indent_label">Farcit Horitzontal</string>
     <string name="perform_wide_search_title">Recerca del dispositiu</string>
-    <string name="perform_wide_search_file">Arxius</string>
+    <string name="search_pref_result_files_title">Arxius</string>
     <string name="pref_suggestion_label">Suggeriments</string>
-    <string name="pref_suggestion_title">Suggerències web (via: <xliff:g id="startpage">Startpage</xliff:g>)</string>
+    <string name="search_pref_result_web_title">Suggerències web (via: <xliff:g id="startpage">Startpage</xliff:g>)</string>
     <string name="pref_advance_search_category">Cerca avançada</string>
     <string name="perform_wide_search_description">Buscar els teus contactes, arxius i configuracions en el cercador del calaix d\'aplicacions.</string>
-    <string name="pref_recent_suggestion_title">Historial</string>
+    <string name="search_pref_result_history_title">Historial</string>
     <!--
     <string name="icons" />
       <string name="icon_size" />
@@ -415,7 +415,7 @@
     <string name="label_search">Busca</string>
     <string name="label_lens">Google Lens</string>
     <string name="label_voice_search">Cerca de veu</string>
-    <string name="search_pref_result_settings_entry_title">Entrades de Configuració</string>
+    <string name="search_pref_result_settings_title">Entrades de Configuració</string>
     <string name="all_apps_search_market_message">Cerca més aplicacions</string>
     <string name="all_apps_search_startpage_message">Buscar en <xliff:g id="startpage">Startpage</xliff:g></string>
     <string name="error_no_market_or_browser_installed">No hi ha una botiga d\'aplicacions O navegador web instal·lat.</string>
@@ -425,8 +425,8 @@
     <string name="all_apps_search_result_settings_entry_from_device">Des de la teva configuració</string>
     <string name="warn_contact_permission_content">És necessari el permís de contactes</string>
     <string name="warn_files_permission_content">És necessari el permís d\'emmagatzematge</string>
-    <string name="all_apps_search_result_files_description">Mitjans de comunicació, documents, carpetes i més.</string>
-    <string name="all_apps_search_result_contacts_description">Contactes i més</string>
+    <string name="search_pref_result_files_description">Mitjans de comunicació, documents, carpetes i més.</string>
+    <string name="search_pref_result_contacts_description">Contactes i més</string>
     <string name="quickstep_incompatible">Integració del sistema incompatible</string>
     <string name="quickstep_incompatible_description">El teu dispositiu està configurat per tenir gestos del sistema (conegut com a Quickstep) proveït per %1$s, però aquesta versió de %1$s no és compatible amb la teva versió d\'Android. Per continuar utilitzant el teu dispositiu, si us plau desinstal·la %1$s actualitzacions o desactiva %1$s com un proveïdor de gestos del sistema.</string>
     <string name="delete">Elimina</string>

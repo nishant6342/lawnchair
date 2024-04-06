@@ -56,7 +56,7 @@
     <string name="transparent_background_icons_description">테마 아이콘에 투명한 배경 사용하기</string>
     <!-- GeneralPreferences -->
     <string name="home_screen_rotation_label">홈 화면 회전</string>
-    <string name="home_screen_rotaton_description">기기가 회전되었을 때.</string>
+    <string name="home_screen_rotation_description">기기가 회전되었을 때.</string>
     <string name="font_label">폰트 (실험적 기능)</string>
     <!-- <string name="icons" /> -->
     <string name="icon_style">아이콘 스타일</string>
@@ -276,15 +276,15 @@
     <string name="hide_hidden_apps_search">검색 결과에서 숨기기</string>
     <string name="pref_all_apps_bulk_icon_loading_title">대량 앱 로드</string>
     <string name="pref_all_apps_bulk_icon_loading_description">아이콘을 개별적으로가 아닌 대량으로 로드하고 표시합니다</string>
-    <string name="pref_all_apps_remember_position_title">Remember Position</string>
-    <string name="pref_all_apps_remember_position_description">Remember the position when you left off instead of the top</string>
-    <string name="pref_all_apps_show_scrollbar_title">Show Scrollbar</string>
+    <string name="pref_all_apps_remember_position_title">위치 기억</string>
+    <string name="pref_all_apps_remember_position_description">맨 위가 아닌, 마지막 위치를 기억</string>
+    <string name="pref_all_apps_show_scrollbar_title">스크롤바 표시</string>
     <string name="pref_category_search">검색</string>
     <string name="show_app_search_bar">검색 창 활성화</string>
     <string name="pref_search_auto_show_keyboard">자동으로 키보드 표시</string>
     <string name="fuzzy_search_title">유사 검색어 검색</string>
     <string name="fuzzy_search_desc">앱을 검색할 때 검색어와 유사한 앱을 찾아줍니다.</string>
-    <string name="max_search_result_count_title">최대 검색 결과 수</string>
+    <string name="max_apps_result_count_title">최대 검색 결과 수</string>
     <string name="max_people_result_count_title">Max People Result Count</string>
     <string name="max_file_result_count_title">최대 파일 결과 수</string>
     <string name="max_suggestion_result_count_title">최대 제안 결과 수</string>
@@ -297,12 +297,12 @@
     <string name="row_height_label">가로 행 높이</string>
     <string name="app_drawer_indent_label">가로 패딩</string>
     <string name="perform_wide_search_title">장치 검색</string>
-    <string name="perform_wide_search_file">Files</string>
+    <string name="search_pref_result_files_title">Files</string>
     <string name="pref_suggestion_label">제안</string>
-    <string name="pref_suggestion_title">웹 제안(<xliff:g id="startpage">Startpage</xliff:g>를 통해)</string>
+    <string name="search_pref_result_web_title">웹 제안(<xliff:g id="startpage">Startpage</xliff:g>를 통해)</string>
     <string name="pref_advance_search_category">고급 검색</string>
     <string name="perform_wide_search_description">앱 서랍 검색에서 연락처, 파일, 설정을 검색</string>
-    <string name="pref_recent_suggestion_title">기록</string>
+    <string name="search_pref_result_history_title">기록</string>
     <!--
     <string name="icons" />
       <string name="icon_size" />
@@ -414,7 +414,7 @@
     <string name="label_search">검색</string>
     <string name="label_lens">구글 렌즈</string>
     <string name="label_voice_search">음성 검색</string>
-    <string name="search_pref_result_settings_entry_title">설정 항목</string>
+    <string name="search_pref_result_settings_title">설정 항목</string>
     <string name="all_apps_search_market_message">더 많은 앱 검색하기</string>
     <string name="all_apps_search_startpage_message"><xliff:g id="startpage">Startpage</xliff:g>에서 검색</string>
     <string name="error_no_market_or_browser_installed">앱 스토어나 브라우저가 설치되어 있지 않습니다.</string>
@@ -424,8 +424,8 @@
     <string name="all_apps_search_result_settings_entry_from_device">From your settings</string>
     <string name="warn_contact_permission_content">연락처 권한이 필요합니다</string>
     <string name="warn_files_permission_content">저장소 권한이 필요합니다</string>
-    <string name="all_apps_search_result_files_description">미디어, 문서, 폴더 등</string>
-    <string name="all_apps_search_result_contacts_description">연락처 등</string>
+    <string name="search_pref_result_files_description">미디어, 문서, 폴더 등</string>
+    <string name="search_pref_result_contacts_description">연락처 등</string>
     <string name="quickstep_incompatible">호환되지 않는 시스템 통합</string>
     <string name="quickstep_incompatible_description">기기가 %1$s에서 제공하는 시스템 제스처(Quickstep으로 알려져 있음)가 설정되어 있지만 %1$s의 이 버전은 Android 버전과 호환되지 않습니다. 장치를 계속 사용하려면 %1$s 업데이트를 제거하거나 시스템 제스처 공급자로 %1$s을(를) 비활성화하십시오.</string>
     <string name="delete">삭제</string>

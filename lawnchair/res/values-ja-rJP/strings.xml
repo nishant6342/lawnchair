@@ -56,7 +56,7 @@
     <string name="transparent_background_icons_description">テーマアイコンの背景を透明にします</string>
     <!-- GeneralPreferences -->
     <string name="home_screen_rotation_label">ホーム画面の回転</string>
-    <string name="home_screen_rotaton_description">デバイスを回転させた時</string>
+    <string name="home_screen_rotation_description">デバイスを回転させた時</string>
     <string name="font_label">フォント (実験的)</string>
     <!-- <string name="icons" /> -->
     <string name="icon_style">アイコンのスタイル</string>
@@ -284,7 +284,7 @@
     <string name="pref_search_auto_show_keyboard">キーボードを自動的に表示</string>
     <string name="fuzzy_search_title">あいまい検索</string>
     <string name="fuzzy_search_desc">アプリ検索のおおよその一致</string>
-    <string name="max_search_result_count_title">検索結果の最大数</string>
+    <string name="max_apps_result_count_title">検索結果の最大数</string>
     <string name="max_people_result_count_title">Max People Result Count</string>
     <string name="max_file_result_count_title">Max Files Result Count</string>
     <string name="max_suggestion_result_count_title">Max Suggestion Result Count</string>
@@ -297,12 +297,12 @@
     <string name="row_height_label">行の高さ</string>
     <string name="app_drawer_indent_label">Horizontal Padding</string>
     <string name="perform_wide_search_title">デバイス検索</string>
-    <string name="perform_wide_search_file">ファイル</string>
+    <string name="search_pref_result_files_title">ファイル</string>
     <string name="pref_suggestion_label">サジェスト</string>
-    <string name="pref_suggestion_title">ウェブ提案 ( <xliff:g id="startpage">Startpage</xliff:g> から)</string>
+    <string name="search_pref_result_web_title">ウェブ提案 ( <xliff:g id="startpage">Startpage</xliff:g> から)</string>
     <string name="pref_advance_search_category">高度な検索</string>
     <string name="perform_wide_search_description">アプリドロワーの検索で連絡先、ファイル、設定を検索します</string>
-    <string name="pref_recent_suggestion_title">履歴</string>
+    <string name="search_pref_result_history_title">履歴</string>
     <!--
     <string name="icons" />
       <string name="icon_size" />
@@ -414,7 +414,7 @@
     <string name="label_search">検索</string>
     <string name="label_lens">Google レンズ</string>
     <string name="label_voice_search">音声検索</string>
-    <string name="search_pref_result_settings_entry_title">Settings Entry</string>
+    <string name="search_pref_result_settings_title">Settings Entry</string>
     <string name="all_apps_search_market_message">その他のアプリを検索</string>
     <string name="all_apps_search_startpage_message"><xliff:g id="startpage">Startpage</xliff:g> で検索</string>
     <string name="error_no_market_or_browser_installed">アプリストアまたはブラウザがインストールされていません。</string>
@@ -424,8 +424,8 @@
     <string name="all_apps_search_result_settings_entry_from_device">設定</string>
     <string name="warn_contact_permission_content">連絡先のアクセス許可が必要です</string>
     <string name="warn_files_permission_content">ストレージのアクセス許可が必要です</string>
-    <string name="all_apps_search_result_files_description">メディア、ドキュメント、フォルダなど</string>
-    <string name="all_apps_search_result_contacts_description">連絡先やその他</string>
+    <string name="search_pref_result_files_description">メディア、ドキュメント、フォルダなど</string>
+    <string name="search_pref_result_contacts_description">連絡先やその他</string>
     <string name="quickstep_incompatible">互換性のないシステム統合</string>
     <string name="quickstep_incompatible_description">お使いのデバイスは %1$s が提供するシステムジェスチャー (Quickstepとして知られています) が設定されていますが %1$s のこのバージョンはお使いのAndroidのバージョンと互換性がありません。デバイスを引き続き使用するには、%1$s の更新をアンインストールするか、システムジェスチャープロバイダとして %1$s を無効にしてください。</string>
     <string name="delete">削除</string>

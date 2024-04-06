@@ -56,7 +56,7 @@
     <string name="transparent_background_icons_description">Dùng nền trong suốt cho biểu tượng theo chủ đề</string>
     <!-- GeneralPreferences -->
     <string name="home_screen_rotation_label">Xoay màn hình chính</string>
-    <string name="home_screen_rotaton_description">Khi thiết bị được xoay.</string>
+    <string name="home_screen_rotation_description">Khi thiết bị được xoay.</string>
     <string name="font_label">Font (Experimental)</string>
     <!-- <string name="icons" /> -->
     <string name="icon_style">Kiểu biểu tượng</string>
@@ -278,13 +278,13 @@
     <string name="pref_all_apps_bulk_icon_loading_description">Load và hiện thị các biểu tượng hàng loạt thay vì tải và hiển thị các biểu tượng riêng lẻ</string>
     <string name="pref_all_apps_remember_position_title">Nhớ vị trí</string>
     <string name="pref_all_apps_remember_position_description">Nhớ vị trí khi bạn rời khỏi thay vì trên cùng</string>
-    <string name="pref_all_apps_show_scrollbar_title">Show Scrollbar</string>
+    <string name="pref_all_apps_show_scrollbar_title">Hiển thị thanh cuộn</string>
     <string name="pref_category_search">Tìm kiếm</string>
     <string name="show_app_search_bar">Hiện thanh tìm kiếm</string>
     <string name="pref_search_auto_show_keyboard">Automatically Show Keyboard</string>
     <string name="fuzzy_search_title">Tìm kiếm Fuzzy</string>
     <string name="fuzzy_search_desc">Cho kết quả tìm kiếm ứng dụng gần đúng.</string>
-    <string name="max_search_result_count_title">Số lượng kết quả tìm kiếm tối đa</string>
+    <string name="max_apps_result_count_title">Số lượng kết quả tìm kiếm tối đa</string>
     <string name="max_people_result_count_title">Số kết quả người tối đa</string>
     <string name="max_file_result_count_title">Số kết quả tệp tối đa</string>
     <string name="max_suggestion_result_count_title">Số kết quả đề xuất tối đa</string>
@@ -297,12 +297,12 @@
     <string name="row_height_label">Chiều cao hàng</string>
     <string name="app_drawer_indent_label">Phần đệm ngang</string>
     <string name="perform_wide_search_title">Tìm thiết bị</string>
-    <string name="perform_wide_search_file">Các tệp</string>
+    <string name="search_pref_result_files_title">Các tệp</string>
     <string name="pref_suggestion_label">Gợi ý</string>
-    <string name="pref_suggestion_title">Đề xuất web ( thông qua <xliff:g id="startpage">Startpage</xliff:g>)</string>
+    <string name="search_pref_result_web_title">Đề xuất web ( thông qua <xliff:g id="startpage">Startpage</xliff:g>)</string>
     <string name="pref_advance_search_category">Tìm kiếm nâng cao</string>
     <string name="perform_wide_search_description">Tìm kiếm liên hệ, tệp, và cài đặt trong Tìm kiếm ở ngăn kéo ứng dụng.</string>
-    <string name="pref_recent_suggestion_title">Lịch sử</string>
+    <string name="search_pref_result_history_title">Lịch sử</string>
     <!--
     <string name="icons" />
       <string name="icon_size" />
@@ -414,7 +414,7 @@
     <string name="label_search">Tìm kiếm</string>
     <string name="label_lens">Google Lens</string>
     <string name="label_voice_search">Tìm kiếm bằng giọng nói</string>
-    <string name="search_pref_result_settings_entry_title">Mục cài đặt</string>
+    <string name="search_pref_result_settings_title">Mục cài đặt</string>
     <string name="all_apps_search_market_message">Tìm thêm ứng dụng</string>
     <string name="all_apps_search_startpage_message">Tìm kiếm trên <xliff:g id="startpage">Startpage</xliff:g></string>
     <string name="error_no_market_or_browser_installed">Không có cửa hàng ứng dụng hay trình duyệt được cài đặt.</string>
@@ -424,8 +424,8 @@
     <string name="all_apps_search_result_settings_entry_from_device">Từ cài đặt của bạn</string>
     <string name="warn_contact_permission_content">Yêu cầu quyền truy cập danh bạ</string>
     <string name="warn_files_permission_content">Yêu cầu quyền lưu trữ</string>
-    <string name="all_apps_search_result_files_description">Phương tiện truyền thông, tài liệu, thư mục, và hơn thế nữa.</string>
-    <string name="all_apps_search_result_contacts_description">Danh bạ và mục khác</string>
+    <string name="search_pref_result_files_description">Phương tiện truyền thông, tài liệu, thư mục, và hơn thế nữa.</string>
+    <string name="search_pref_result_contacts_description">Danh bạ và mục khác</string>
     <string name="quickstep_incompatible">Tích hợp hệ thống không tương thích</string>
     <string name="quickstep_incompatible_description">Thiết bị của bạn được thiết lập để hỗ trợ cử chỉ hệ thống (gọi là Quickstep) được cung cấp bởi %1$s, nhưng phiên bản này của %1$s không tương thích với phiên bản Android của bạn. Để tiếp tục sử dụng thiết bị, vui lòng gỡ cài đặt bản cập nhật của %1$s hoặc vô hiệu hóa %1$s khỏi cung cấp cử chỉ hệ thống.</string>
     <string name="delete">Xoá</string>

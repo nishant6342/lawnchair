@@ -13,11 +13,9 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.remember
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
-import androidx.compose.ui.unit.dp
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.lifecycle.Lifecycle
 import app.lawnchair.LauncherPreviewManager
-import app.lawnchair.theme.surfaceColorAtElevation
 import app.lawnchair.ui.theme.LawnchairTheme
 import app.lawnchair.util.lifecycleState
 import app.lawnchair.wallpaper.WallpaperColorsCompat
@@ -41,7 +39,7 @@ fun DummyLauncherBox(
             Spacer(
                 modifier = Modifier
                     .fillMaxSize()
-                    .background(MaterialTheme.colorScheme.surfaceColorAtElevation(1.dp)),
+                    .background(MaterialTheme.colorScheme.surfaceContainerHigh),
             )
         }
         content()

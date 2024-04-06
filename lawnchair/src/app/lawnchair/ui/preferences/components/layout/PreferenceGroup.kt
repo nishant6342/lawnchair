@@ -24,10 +24,7 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.height
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.requiredHeight
-import androidx.compose.material.ContentAlpha
-import androidx.compose.material.MaterialTheme
-import androidx.compose.material3.LocalContentColor
-import androidx.compose.material3.MaterialTheme as Material3Theme
+import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Surface
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -47,7 +44,9 @@ fun PreferenceGroup(
     dividersToSkip: Int = 0,
     content: @Composable () -> Unit,
 ) {
-    Column(modifier = modifier) {
+    Column(
+        modifier = modifier,
+    ) {
         PreferenceGroupHeading(heading)
         Surface(
             modifier = Modifier.padding(horizontal = 16.dp),
@@ -74,38 +73,43 @@ fun PreferenceGroup(
 @Composable
 fun PreferenceGroupHeading(
     heading: String?,
+    modifier: Modifier = Modifier,
 ) {
     if (heading != null) {
         Column(
             verticalArrangement = Arrangement.Center,
-            modifier = Modifier
+            modifier = modifier
                 .height(48.dp)
                 .padding(horizontal = 32.dp)
                 .fillMaxWidth(),
         ) {
             Text(
                 text = heading,
-                style = Material3Theme.typography.titleSmall,
-                color = Material3Theme.colorScheme.primary,
+                style = MaterialTheme.typography.titleSmall,
+                color = MaterialTheme.colorScheme.primary,
             )
         }
     } else {
-        Spacer(modifier = Modifier.requiredHeight(8.dp))
+        Spacer(modifier = modifier.requiredHeight(8.dp))
     }
 }
 
 @Composable
 fun PreferenceGroupDescription(
+    modifier: Modifier = Modifier,
     description: String? = null,
     showDescription: Boolean = true,
 ) {
     description?.let {
-        ExpandAndShrink(visible = showDescription) {
+        ExpandAndShrink(
+            modifier = modifier,
+            visible = showDescription,
+        ) {
             Row(modifier = Modifier.padding(start = 32.dp, end = 32.dp, top = 16.dp)) {
                 Text(
                     text = it,
-                    style = Material3Theme.typography.bodyMedium,
-                    color = LocalContentColor.current.copy(alpha = ContentAlpha.medium),
+                    style = MaterialTheme.typography.bodyMedium,
+                    color = MaterialTheme.colorScheme.onSurfaceVariant,
                 )
             }
         }

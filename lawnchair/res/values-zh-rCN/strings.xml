@@ -55,9 +55,9 @@
     <string name="transparent_background_icons">透明的带主题图标</string>
     <string name="transparent_background_icons_description">在带主题的图标上使用透明背景</string>
     <!-- GeneralPreferences -->
-    <string name="home_screen_rotation_label">允许主屏幕旋转</string>
-    <string name="home_screen_rotaton_description">当设备旋转时不保持竖屏</string>
-    <string name="font_label">字体（实验性功能）</string>
+    <string name="home_screen_rotation_label">主屏幕旋转</string>
+    <string name="home_screen_rotation_description">当设备旋转时</string>
+    <string name="font_label">字体 (实验性功能)</string>
     <!-- <string name="icons" /> -->
     <string name="icon_style">图标样式</string>
     <string name="icon_shape_label">图标形状</string>
@@ -284,7 +284,7 @@
     <string name="pref_search_auto_show_keyboard">自动显示键盘</string>
     <string name="fuzzy_search_title">模糊搜索</string>
     <string name="fuzzy_search_desc">搜索应用时显示近似结果</string>
-    <string name="max_search_result_count_title">最大搜索结果数</string>
+    <string name="max_apps_result_count_title">最大搜索结果数</string>
     <string name="max_people_result_count_title">最大联系人结果数</string>
     <string name="max_file_result_count_title">最大文件结果数</string>
     <string name="max_suggestion_result_count_title">最大建议结果数</string>
@@ -297,12 +297,12 @@
     <string name="row_height_label">行高度</string>
     <string name="app_drawer_indent_label">水平拉伸</string>
     <string name="perform_wide_search_title">大范围搜索</string>
-    <string name="perform_wide_search_file">文件</string>
+    <string name="search_pref_result_files_title">文件</string>
     <string name="pref_suggestion_label">建议</string>
-    <string name="pref_suggestion_title">网络建议 (通过 <xliff:g id="startpage">Startpage</xliff:g>)</string>
+    <string name="search_pref_result_web_title">网络建议 (通过 <xliff:g id="startpage">Startpage</xliff:g>)</string>
     <string name="pref_advance_search_category">高级搜索</string>
     <string name="perform_wide_search_description">在应用抽屉中搜索您的联系人、文件和设置项。</string>
-    <string name="pref_recent_suggestion_title">历史记录</string>
+    <string name="search_pref_result_history_title">历史记录</string>
     <!--
     <string name="icons" />
       <string name="icon_size" />
@@ -414,7 +414,7 @@
     <string name="label_search">搜索</string>
     <string name="label_lens">相机</string>
     <string name="label_voice_search">语音搜索</string>
-    <string name="search_pref_result_settings_entry_title">设置项</string>
+    <string name="search_pref_result_settings_title">设置项</string>
     <string name="all_apps_search_market_message">搜索更多应用</string>
     <string name="all_apps_search_startpage_message">在 <xliff:g id="startpage">Startpage</xliff:g> 上搜索</string>
     <string name="error_no_market_or_browser_installed">没有安装应用商店或浏览器。</string>
@@ -424,8 +424,8 @@
     <string name="all_apps_search_result_settings_entry_from_device">来自您的设置</string>
     <string name="warn_contact_permission_content">需要联系人权限</string>
     <string name="warn_files_permission_content">需要存储权限</string>
-    <string name="all_apps_search_result_files_description">媒体、 文档、 文件夹及更多。</string>
-    <string name="all_apps_search_result_contacts_description">联系人及更多</string>
+    <string name="search_pref_result_files_description">媒体、 文档、 文件夹及更多。</string>
+    <string name="search_pref_result_contacts_description">联系人及更多</string>
     <string name="quickstep_incompatible">不兼容的系统集成</string>
     <string name="quickstep_incompatible_description">您的设备被配置为由 %1$s 提供的系统手势（称为Quickstep），但这个版本的 %1$s 与您的 Android 版本不兼容。 要继续使用您的设备，请卸载 %1$s 更新或禁用 %1$s 系统手势提供者。</string>
     <string name="delete">删除</string>

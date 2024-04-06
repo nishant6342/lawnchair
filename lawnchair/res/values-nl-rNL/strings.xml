@@ -56,7 +56,7 @@
     <string name="transparent_background_icons_description">Gebruik transparante achtergrond bij gethematiseerde iconen</string>
     <!-- GeneralPreferences -->
     <string name="home_screen_rotation_label">Startscherm rotatie</string>
-    <string name="home_screen_rotaton_description">Wanneer het apparaat is gedraaid.</string>
+    <string name="home_screen_rotation_description">Wanneer het apparaat is gedraaid.</string>
     <string name="font_label">Lettertype (Experimenteel)</string>
     <!-- <string name="icons" /> -->
     <string name="icon_style">Icoon stijl</string>
@@ -284,7 +284,7 @@
     <string name="pref_search_auto_show_keyboard">Toetsenbord Automatisch Weergeven</string>
     <string name="fuzzy_search_title">Fuzzy zoeken</string>
     <string name="fuzzy_search_desc">Geschatte overeenkomst voor app zoekopdrachten.</string>
-    <string name="max_search_result_count_title">Max aantal zoekresultaten</string>
+    <string name="max_apps_result_count_title">Max aantal zoekresultaten</string>
     <string name="max_people_result_count_title">Max aantal personen</string>
     <string name="max_file_result_count_title">Max aantal bestanden</string>
     <string name="max_suggestion_result_count_title">Max aantal suggesties</string>
@@ -297,12 +297,12 @@
     <string name="row_height_label">Rij hoogte</string>
     <string name="app_drawer_indent_label">Horizontale opvulling</string>
     <string name="perform_wide_search_title">Zoeken op apparaat</string>
-    <string name="perform_wide_search_file">Bestanden</string>
+    <string name="search_pref_result_files_title">Bestanden</string>
     <string name="pref_suggestion_label">Suggesties</string>
-    <string name="pref_suggestion_title">Websuggesties (via <xliff:g id="startpage">Startpagina</xliff:g>)</string>
+    <string name="search_pref_result_web_title">Websuggesties (via <xliff:g id="startpage">Startpagina</xliff:g>)</string>
     <string name="pref_advance_search_category">Uitgebreid zoeken</string>
     <string name="perform_wide_search_description">Zoek je contactpersonen, bestanden en instellingen in de app-overizcht zoekbalk.</string>
-    <string name="pref_recent_suggestion_title">Geschiedenis</string>
+    <string name="search_pref_result_history_title">Geschiedenis</string>
     <!--
     <string name="icons" />
       <string name="icon_size" />
@@ -415,7 +415,7 @@
     <string name="label_search">Zoek</string>
     <string name="label_lens">Google Lens</string>
     <string name="label_voice_search">Spraak Zoeken</string>
-    <string name="search_pref_result_settings_entry_title">Instellingen</string>
+    <string name="search_pref_result_settings_title">Instellingen</string>
     <string name="all_apps_search_market_message">Zoeken naar Meer Apps</string>
     <string name="all_apps_search_startpage_message">Zoeken met <xliff:g id="startpage">Startpagina</xliff:g></string>
     <string name="error_no_market_or_browser_installed">Geen appwinkel of browser geïnstalleerd.</string>
@@ -425,8 +425,8 @@
     <string name="all_apps_search_result_settings_entry_from_device">Uit je instellingen</string>
     <string name="warn_contact_permission_content">Vereist toestemming tot contacten</string>
     <string name="warn_files_permission_content">Opslag toestemming vereist</string>
-    <string name="all_apps_search_result_files_description">Media, documenten, mappen en meer.</string>
-    <string name="all_apps_search_result_contacts_description">Contacten en meer</string>
+    <string name="search_pref_result_files_description">Media, documenten, mappen en meer.</string>
+    <string name="search_pref_result_contacts_description">Contacten en meer</string>
     <string name="quickstep_incompatible">Incompatibele systeem integratie</string>
     <string name="quickstep_incompatible_description">Uw toestel is geconfigureerd voor systeemgebaren (bekend als Quickstep) geleverd door %1$s, maar deze versie van %1$s is niet compatibel met uw Android-versie. Om uw toestel te blijven gebruiken, dient u %1$s updates te verwijderen of %1$s uit te schakelen als een systeemgebaren provider.</string>
     <string name="delete">Verwijderen</string>

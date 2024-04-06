@@ -20,6 +20,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.runtime.getValue
 import androidx.compose.runtime.remember
 import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.res.stringResource
 import androidx.navigation.NavGraphBuilder
@@ -58,11 +59,16 @@ fun NavGraphBuilder.homeScreenGraph(route: String) {
 }
 
 @Composable
-fun HomeScreenPreferences() {
+fun HomeScreenPreferences(
+    modifier: Modifier = Modifier,
+) {
     val prefs = preferenceManager()
     val prefs2 = preferenceManager2()
     val scope = rememberCoroutineScope()
-    PreferenceLayout(label = stringResource(id = R.string.home_screen_label)) {
+    PreferenceLayout(
+        label = stringResource(id = R.string.home_screen_label),
+        modifier = modifier,
+    ) {
         val lockHomeScreenAdapter = prefs2.lockHomeScreen.getAdapter()
         PreferenceGroup(heading = stringResource(id = R.string.general_label)) {
             val addIconToHomeAdapter = prefs.addIconToHome.getAdapter()
@@ -206,15 +212,28 @@ fun HomeScreenPreferences() {
                 adapter = prefs2.allowWidgetOverlap.getAdapter(),
                 label = stringResource(id = R.string.allow_widget_overlap),
             )
+            SwitchPreference(
+                adapter = prefs2.widgetUnlimitedSize.getAdapter(),
+                label = stringResource(id = R.string.widget_unlimited_size_label),
+                description = stringResource(id = R.string.widget_unlimited_size_description),
+            )
+            SwitchPreference(
+                adapter = prefs2.forceWidgetResize.getAdapter(),
+                label = stringResource(id = R.string.force_widget_resize_label),
+                description = stringResource(id = R.string.force_widget_resize_description),
+            )
         }
     }
 }
 
 @Composable
-fun HomeScreenTextColorPreference() {
+fun HomeScreenTextColorPreference(
+    modifier: Modifier = Modifier,
+) {
     ListPreference(
         adapter = preferenceManager2().workspaceTextColor.getAdapter(),
         entries = ColorMode.entries(),
         label = stringResource(id = R.string.home_screen_text_color),
+        modifier = modifier,
     )
 }

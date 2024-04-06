@@ -17,9 +17,13 @@
 package app.lawnchair.ui.preferences
 
 import androidx.compose.material3.Surface
+import androidx.compose.material3.windowsizeclass.WindowSizeClass
+import androidx.compose.material3.windowsizeclass.WindowWidthSizeClass
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
+import androidx.compose.runtime.compositionLocalOf
 import androidx.compose.runtime.staticCompositionLocalOf
+import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalLayoutDirection
 import androidx.compose.ui.unit.LayoutDirection
 import androidx.lifecycle.viewmodel.compose.viewModel
@@ -43,6 +47,7 @@ import app.lawnchair.ui.preferences.destinations.homeScreenGraph
 import app.lawnchair.ui.preferences.destinations.iconPickerGraph
 import app.lawnchair.ui.preferences.destinations.pickAppForGestureGraph
 import app.lawnchair.ui.preferences.destinations.quickstepGraph
+import app.lawnchair.ui.preferences.destinations.searchGraph
 import app.lawnchair.ui.preferences.destinations.selectIconGraph
 import app.lawnchair.ui.preferences.destinations.smartspaceGraph
 import app.lawnchair.ui.preferences.destinations.smartspaceWidgetGraph
@@ -72,6 +77,7 @@ object Routes {
     const val RESTORE_BACKUP = "restoreBackup"
     const val PICK_APP_FOR_GESTURE = "pickAppForGesture"
     const val GESTURES = "gestures"
+    const val SEARCH = "search"
 }
 
 val LocalNavController = staticCompositionLocalOf<NavController> {
@@ -84,14 +90,20 @@ val LocalPreferenceInteractor = staticCompositionLocalOf<PreferenceInteractor> {
 
 @Composable
 fun Preferences(
+    windowSizeClass: WindowSizeClass,
+    modifier: Modifier = Modifier,
     interactor: PreferenceInteractor = viewModel<PreferenceViewModel>(),
 ) {
     val navController = rememberNavController()
     val isRtl = LocalLayoutDirection.current == LayoutDirection.Rtl
     val slideDistance = rememberSlideDistance()
 
-    Providers {
-        Surface {
+    val isExpandedScreen = windowSizeClass.widthSizeClass == WindowWidthSizeClass.Expanded
+
+    Providers(isExpandedScreen) {
+        Surface(
+            modifier = modifier,
+        ) {
             CompositionLocalProvider(
                 LocalNavController provides navController,
                 LocalPreferenceInteractor provides interactor,
@@ -124,6 +136,7 @@ fun Preferences(
                         restoreBackupGraph(route = subRoute(Routes.RESTORE_BACKUP))
                         pickAppForGestureGraph(route = subRoute(Routes.PICK_APP_FOR_GESTURE))
                         gesturesGraph(route = subRoute(Routes.GESTURES))
+                        searchGraph(route = subRoute(Routes.SEARCH))
                     }
                 }
             }
@@ -133,11 +146,16 @@ fun Preferences(
 
 @Composable
 private fun Providers(
+    isExpandedScreen: Boolean = false,
     content: @Composable () -> Unit,
 ) {
-    ProvideLifecycleState {
-        ProvideBottomSheetHandler {
-            content()
+    CompositionLocalProvider(LocalIsExpandedScreen provides isExpandedScreen) {
+        ProvideLifecycleState {
+            ProvideBottomSheetHandler {
+                content()
+            }
         }
     }
 }
+
+val LocalIsExpandedScreen = compositionLocalOf { false }

@@ -56,7 +56,7 @@
     <string name="transparent_background_icons_description">השתמש ברקע שקוף עבור סמלי סגנון</string>
     <!-- GeneralPreferences -->
     <string name="home_screen_rotation_label">סיבוב מסך הבית</string>
-    <string name="home_screen_rotaton_description">כאשר המכשיר מסובב.</string>
+    <string name="home_screen_rotation_description">כאשר המכשיר מסובב.</string>
     <string name="font_label">פונט (ניסיוני)</string>
     <!-- <string name="icons" /> -->
     <string name="icon_style">סגנון אייקון</string>
@@ -284,7 +284,7 @@
     <string name="pref_search_auto_show_keyboard">הצגה אוטומטית של המקלדת</string>
     <string name="fuzzy_search_title">חיפוש מקורב</string>
     <string name="fuzzy_search_desc">התאמה מקורבת עבור חיפושי אפליקציה.</string>
-    <string name="max_search_result_count_title">מספר תוצאות חיפוש מקסימלי</string>
+    <string name="max_apps_result_count_title">מספר תוצאות חיפוש מקסימלי</string>
     <string name="max_people_result_count_title">Max People Result Count</string>
     <string name="max_file_result_count_title">Max Files Result Count</string>
     <string name="max_suggestion_result_count_title">Max Suggestion Result Count</string>
@@ -297,12 +297,12 @@
     <string name="row_height_label">גובה שורה</string>
     <string name="app_drawer_indent_label">Horizontal Padding</string>
     <string name="perform_wide_search_title">Device Search</string>
-    <string name="perform_wide_search_file">קבצים</string>
+    <string name="search_pref_result_files_title">קבצים</string>
     <string name="pref_suggestion_label">המלצות</string>
-    <string name="pref_suggestion_title">Web suggestions (via <xliff:g id="startpage">Startpage</xliff:g>)</string>
+    <string name="search_pref_result_web_title">Web suggestions (via <xliff:g id="startpage">Startpage</xliff:g>)</string>
     <string name="pref_advance_search_category">חיפוש מתקדם</string>
     <string name="perform_wide_search_description">ניתן לחפש את אנשי הקשר, הקבצים וההגדרות שלך בחיפוש במגירת האפליקציות.</string>
-    <string name="pref_recent_suggestion_title">היסטוריה</string>
+    <string name="search_pref_result_history_title">היסטוריה</string>
     <!--
     <string name="icons" />
       <string name="icon_size" />
@@ -417,7 +417,7 @@
     <string name="label_search">חיפוש</string>
     <string name="label_lens">עדשת גוגל</string>
     <string name="label_voice_search">חיפוש קולי</string>
-    <string name="search_pref_result_settings_entry_title">Settings Entry</string>
+    <string name="search_pref_result_settings_title">Settings Entry</string>
     <string name="all_apps_search_market_message">חפש עוד יישומים</string>
     <string name="all_apps_search_startpage_message">Search on <xliff:g id="startpage">Startpage</xliff:g></string>
     <string name="error_no_market_or_browser_installed">לא נמצאו חנות או דפדפן מותקנים.</string>
@@ -427,8 +427,8 @@
     <string name="all_apps_search_result_settings_entry_from_device">מההגדרות</string>
     <string name="warn_contact_permission_content">נדרשת הרשאה לאנשי קשר</string>
     <string name="warn_files_permission_content">נדרשת הרשאה לאחסון</string>
-    <string name="all_apps_search_result_files_description">מדיה, מסמכים, תיקיות ועוד.</string>
-    <string name="all_apps_search_result_contacts_description">אנשי קשר ועוד</string>
+    <string name="search_pref_result_files_description">מדיה, מסמכים, תיקיות ועוד.</string>
+    <string name="search_pref_result_contacts_description">אנשי קשר ועוד</string>
     <string name="quickstep_incompatible">גישור לא תואם למערכת</string>
     <string name="quickstep_incompatible_description">המכשיר שלך מוגדר עם מחוות-מערכת (ידועים כ-Quickstep) שפועלות ע\"י %1$s, אבל הגרסה הזאת של %1$s לא מתאימה לעבוד עם גרסת האנדרואיד שלך. בכדי להמשיך להשתמש במכשיר שלך, יש להסיר את עדכוני %1$s או להשבית את פעולת %1$s כמפעיל מחוות-המערכת.</string>
     <string name="delete">מחיקה</string>

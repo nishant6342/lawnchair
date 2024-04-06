@@ -32,8 +32,6 @@ import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.requiredHeight
 import androidx.compose.foundation.layout.size
 import androidx.compose.foundation.shape.CircleShape
-import androidx.compose.material.ContentAlpha
-import androidx.compose.material3.LocalContentColor
 import androidx.compose.material3.MaterialTheme
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
@@ -145,6 +143,12 @@ private val product = listOf(
         socialUrl = "https://x.com/skittles9823",
     ),
     TeamMember(
+        name = "SuperDragonXD",
+        role = Role.Development,
+        photoUrl = "https://avatars.githubusercontent.com/u/70206496",
+        socialUrl = "https://github.com/SuperDragonXD",
+    ),
+    TeamMember(
         name = "Yasan Glass",
         role = Role.Development,
         photoUrl = "https://avatars.githubusercontent.com/u/41836211",
@@ -170,12 +174,6 @@ private val supportAndPr = listOf(
         role = Role.SupportAndPr,
         photoUrl = "https://avatars.githubusercontent.com/u/29402532",
         socialUrl = "https://x.com/rikkoedoot",
-    ),
-    TeamMember(
-        name = "SuperDragonXD",
-        role = Role.Support,
-        photoUrl = "https://avatars.githubusercontent.com/u/70206496",
-        socialUrl = "https://github.com/SuperDragonXD",
     ),
 )
 
@@ -219,12 +217,15 @@ fun NavGraphBuilder.aboutGraph(route: String) {
 
 @OptIn(ExperimentalFoundationApi::class)
 @Composable
-fun About() {
+fun About(
+    modifier: Modifier = Modifier,
+) {
     val context = LocalContext.current
 
     PreferenceLayout(
-        horizontalAlignment = Alignment.CenterHorizontally,
         label = stringResource(id = R.string.about_label),
+        modifier = modifier,
+        horizontalAlignment = Alignment.CenterHorizontally,
     ) {
         Column(
             modifier = Modifier.padding(top = 8.dp),
@@ -245,7 +246,7 @@ fun About() {
             Text(
                 text = BuildConfig.VERSION_DISPLAY_NAME,
                 style = MaterialTheme.typography.bodyLarge,
-                color = LocalContentColor.current.copy(alpha = ContentAlpha.medium),
+                color = MaterialTheme.colorScheme.onSurfaceVariant,
                 modifier = Modifier.combinedClickable(
                     onClick = {},
                     onLongClick = {

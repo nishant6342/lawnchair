@@ -26,7 +26,6 @@ import androidx.compose.foundation.layout.fillMaxWidth
 import androidx.compose.foundation.layout.padding
 import androidx.compose.foundation.layout.requiredSize
 import androidx.compose.foundation.layout.requiredWidth
-import androidx.compose.material.RadioButton
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.rounded.Add
 import androidx.compose.material.icons.rounded.Edit
@@ -34,6 +33,7 @@ import androidx.compose.material3.Icon
 import androidx.compose.material3.LocalContentColor
 import androidx.compose.material3.LocalTextStyle
 import androidx.compose.material3.MaterialTheme
+import androidx.compose.material3.RadioButton
 import androidx.compose.material3.Text
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.CompositionLocalProvider
@@ -98,14 +98,19 @@ fun iconShapeEntries(context: Context): List<ListPreferenceEntry<IconShape>> {
 }
 
 @Composable
-fun IconShapePreference() {
+fun IconShapePreference(
+    modifier: Modifier = Modifier,
+) {
     val context = LocalContext.current
     val preferenceManager2 = preferenceManager2()
     val entries = remember { iconShapeEntries(context) }
     val iconShapeAdapter = preferenceManager2.iconShape.getAdapter()
     val customIconShape = preferenceManager2.customIconShape.asState()
 
-    PreferenceLayout(label = stringResource(id = R.string.icon_shape_label)) {
+    PreferenceLayout(
+        label = stringResource(id = R.string.icon_shape_label),
+        modifier = modifier,
+    ) {
         PreferenceGroup(
             heading = stringResource(id = R.string.custom),
         ) {
