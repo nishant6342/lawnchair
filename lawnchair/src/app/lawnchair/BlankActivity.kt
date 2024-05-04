@@ -2,6 +2,7 @@ package app.lawnchair
 
 import android.app.Activity
 import android.content.Intent
+import android.os.Build
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
@@ -10,6 +11,7 @@ import androidx.activity.compose.setContent
 import androidx.activity.enableEdgeToEdge
 import androidx.activity.result.ActivityResult
 import androidx.activity.result.contract.ActivityResultContracts
+import androidx.annotation.RequiresApi
 import androidx.appcompat.app.AppCompatActivity
 import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.material3.AlertDialog
@@ -34,6 +36,7 @@ class BlankActivity : AppCompatActivity() {
     private var firstResume = true
     private var targetStarted = false
 
+    @RequiresApi(Build.VERSION_CODES.TIRAMISU)
     @OptIn(ExperimentalMaterial3Api::class)
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -82,17 +85,18 @@ class BlankActivity : AppCompatActivity() {
         finish()
     }
 
+    @RequiresApi(Build.VERSION_CODES.TIRAMISU)
     private fun startTargetActivity() {
         when {
             intent.hasExtra("intent") -> {
                 if (intent.hasExtra("dialogTitle")) {
-                    startActivity(intent.getParcelableExtra("intent"))
+                    startActivity(intent.getParcelableExtra("intent", Intent::class.java)!!)
                 } else {
                     registerForActivityResult(ActivityResultContracts.StartActivityForResult()) {
                         resultReceiver.send(it.resultCode, it.data?.extras)
                         resultSent = true
                         finish()
-                    }.launch(intent.getParcelableExtra("intent"))
+                    }.launch(intent.getParcelableExtra("intent", Intent::class.java)!!)
                 }
             }
             else -> {
